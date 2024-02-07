@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(221, 250, 125);
+        }
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(wheat,white);
+            /* align-items: center; */
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            box-shadow: 5px black;
+        }
+
+        .box h2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            background: blue;
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        .box h3 {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            color: brown;
+        }
+
+        .box .inputbox {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+        }
+
+        .box .links {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+        }
+        .box input[type=submit]{
+            margin: 25px;
+            border: none;
+            background: rebeccapurple;
+            color: white;
+            border-radius: 4px;
+            width: 60px;
+            height: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <h2>facebook</h2>
+            <h3>SignIn</h3>
+            <div class="inputbox">
+                <span>UserName</span>
+                <input type="text" required="required">
+            </div>
+            <div class="inputbox">
+                <span>Email</span>
+                <input type="email" required="required">
+            </div>
+            <div class="inputbox">
+                <span>Password</span>
+                <input type="password" required="required">
+            </div>
+            <div class="links">
+                <a href="#">forget password?</a>
+                <a href="#">SignUp</a>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
